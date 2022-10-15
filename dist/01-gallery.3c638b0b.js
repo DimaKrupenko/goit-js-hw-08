@@ -556,7 +556,7 @@ let lightbox = new (0, _simpleLightboxEsmDefault.default)(".gallery a", {
     captionDelay: 250
 });
 
-},{"./gallery-items.js":"e9dXm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../node_modules/simplelightbox/dist/simple-lightbox.esm":"chDZx"}],"e9dXm":[function(require,module,exports) {
+},{"./gallery-items.js":"e9dXm","../node_modules/simplelightbox/dist/simple-lightbox.esm":"chDZx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e9dXm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "galleryItems", ()=>galleryItems);
