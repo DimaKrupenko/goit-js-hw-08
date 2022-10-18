@@ -558,7 +558,7 @@ let lightbox = new (0, _simplelightboxDefault.default)(".gallery a", {
     captionDelay: 250
 });
 
-},{"./gallery-items.js":"e9dXm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq"}],"e9dXm":[function(require,module,exports) {
+},{"./gallery-items.js":"e9dXm","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e9dXm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "galleryItems", ()=>galleryItems);
