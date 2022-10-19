@@ -2369,6 +2369,6 @@ var global = arguments[3];
 }
 module.exports = throttle;
 
-},{}]},["15z1C","2KCbX"], "2KCbX", "parcelRequire4c75")
+},{}]},["15z1C","2KCbX"], "2KCbX", "parcelRequire94c2")
 
 //# sourceMappingURL=02-video.cc7354fd.js.map
