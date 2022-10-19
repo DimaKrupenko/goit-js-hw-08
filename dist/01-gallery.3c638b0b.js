@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"a1WKf":[function(require,module,exports) {
+})({"5WZTY":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
@@ -558,7 +558,7 @@ let lightbox = new (0, _simplelightboxDefault.default)(".gallery a", {
     captionDelay: 250
 });
 
-},{"./gallery-items.js":"e9dXm","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e9dXm":[function(require,module,exports) {
+},{"./gallery-items.js":"e9dXm","@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq"}],"e9dXm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "galleryItems", ()=>galleryItems);
@@ -610,7 +610,7 @@ const galleryItems = [
     }, 
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5"}],"4ewn5":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -2064,6 +2064,6 @@ var _default = SimpleLightbox;
 exports["default"] = _default;
 global.SimpleLightbox = SimpleLightbox;
 
-},{}]},["a1WKf","9de4I"], "9de4I", "parcelRequire94c2")
+},{}]},["5WZTY","9de4I"], "9de4I", "parcelRequire94c2")
 
 //# sourceMappingURL=01-gallery.3c638b0b.js.map

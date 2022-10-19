@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"15z1C":[function(require,module,exports) {
+})({"6YHf7":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
@@ -562,7 +562,37 @@ player.setCurrentTime(localStorage.getItem("videoplayer-current-time")).then(fun
     }
 });
 
-},{"@vimeo/player":"kmmUG","lodash.throttle":"bGJVT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kmmUG":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5","@vimeo/player":"kmmUG","lodash.throttle":"bGJVT"}],"4ewn5":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"kmmUG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var global = arguments[3];
@@ -1998,37 +2028,7 @@ if (!isNode) {
 }
 exports.default = Player;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"bGJVT":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5"}],"bGJVT":[function(require,module,exports) {
 var global = arguments[3];
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -2369,6 +2369,6 @@ var global = arguments[3];
 }
 module.exports = throttle;
 
-},{}]},["15z1C","2KCbX"], "2KCbX", "parcelRequire94c2")
+},{}]},["6YHf7","2KCbX"], "2KCbX", "parcelRequire94c2")
 
 //# sourceMappingURL=02-video.cc7354fd.js.map
