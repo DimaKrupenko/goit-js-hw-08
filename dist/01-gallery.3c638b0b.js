@@ -536,9 +536,9 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 // Add imports above this line
 var _galleryItemsJs = require("./gallery-items.js");
 // Change code below this line
-var _simpleLightboxMinCss = require("simplelightbox/dist/simple-lightbox.min.css");
+var _simpleLightboxMinCss = require("../node_modules/simplelightbox/dist/simple-lightbox.min.css");
 // import SimpleLightbox from "../node_modules/simplelightbox/dist/simple-lightbox.esm";
-var _simplelightbox = require("simplelightbox");
+var _simplelightbox = require("../node_modules/simplelightbox");
 var _simplelightboxDefault = parcelHelpers.interopDefault(_simplelightbox);
 console.log((0, _galleryItemsJs.galleryItems));
 const gallery = document.querySelector(".gallery");
@@ -558,7 +558,7 @@ let lightbox = new (0, _simplelightboxDefault.default)(".gallery a", {
     captionDelay: 250
 });
 
-},{"./gallery-items.js":"e9dXm","@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq"}],"e9dXm":[function(require,module,exports) {
+},{"./gallery-items.js":"e9dXm","@parcel/transformer-js/src/esmodule-helpers.js":"4ewn5","../node_modules/simplelightbox/dist/simple-lightbox.min.css":"kaxSc","../node_modules/simplelightbox":"9ydBq"}],"e9dXm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "galleryItems", ()=>galleryItems);
