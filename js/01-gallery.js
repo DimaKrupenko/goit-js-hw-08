@@ -2,7 +2,8 @@
 
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "../node_modules/simplelightbox/dist/simple-lightbox.css";
+import SimpleLightbox from "../node_modules/simplelightbox";
 
 console.log(galleryItems);
 
@@ -27,7 +28,7 @@ const itemEl = galleryItems
 gallery.insertAdjacentHTML("afterbegin", itemEl);
 
 // import SimpleLightbox from "../node_modules/simplelightbox/dist/simple-lightbox.esm";
-import SimpleLightbox from "simplelightbox";
+
 let lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,

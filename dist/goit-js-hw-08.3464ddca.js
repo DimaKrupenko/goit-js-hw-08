@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"c4xoB":[function(require,module,exports) {
+})({"jbZ0p":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
@@ -533,6 +533,6 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"j4kuM":[function(require,module,exports) {
 
-},{}]},["c4xoB","j4kuM"], "j4kuM", "parcelRequire94c2")
+},{}]},["jbZ0p","j4kuM"], "j4kuM", "parcelRequire94c2")
 
 //# sourceMappingURL=goit-js-hw-08.3464ddca.js.map
