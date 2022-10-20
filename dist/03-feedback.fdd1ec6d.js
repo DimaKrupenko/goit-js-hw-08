@@ -541,21 +541,33 @@ const ref = {
     input: document.querySelector(".feedback-form input")
 };
 ref.form.addEventListener("submit", onFormSubmit);
-ref.textarea.addEventListener("input", (0, _lodashThrottleDefault.default)(onTaxtareaInput, 500));
-ref.input.addEventListener("input", (0, _lodashThrottleDefault.default)(onTaxtareaInput, 500));
-populateMessage();
+ref.form.addEventListener("input", (0, _lodashThrottleDefault.default)(onFormInput, 500));
+// ref.input.addEventListener("input", throttle(onTaxtareaInput, 500));
+let data = {
+    email: "",
+    message: ""
+};
+populateForm();
 function onFormSubmit(evt) {
     evt.preventDefault();
     evt.currentTarget.reset();
     localStorage.removeItem("feedback-form-state");
 }
-function onTaxtareaInput(evt) {
-    const message = evt.target.value;
-    localStorage.setItem("feedback-form-state", message);
+function onFormInput(evt) {
+    if (evt.target.nodeName === "INPUT") data.email = evt.target.value;
+    else if (evt.target.nodeName === "TEXTAREA") data.message = evt.target.value;
+    if (data) localStorage.setItem("feedback-form-state", JSON.stringify(data));
+//   localStorage.setItem("feedback-form-state", message);
 }
-function populateMessage(evt) {
+function populateForm(evt) {
     const savedMessage = localStorage.getItem("feedback-form-state");
-    if (savedMessage) ref.textarea.value = savedMessage;
+    const parsedMessage = JSON.parse(savedMessage);
+    if (parsedMessage) {
+        data = parsedMessage;
+        ref.textarea.value = data.message;
+        ref.input.value = data.email;
+        console.log(data);
+    }
 } // let data = { email: "", message: "" };
  // form.addEventListener(
  //   "input",
