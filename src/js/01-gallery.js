@@ -1,17 +1,17 @@
 // Add imports above this line
 
-import { galleryItems } from "./gallery-items.js";
+import { galleryItems } from './gallery-items.js';
 // Change code below this line
-import "../node_modules/simplelightbox/dist/simple-lightbox.css";
-import SimpleLightbox from "../node_modules/simplelightbox";
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import Simplelightbox from 'simplelightbox';
 
 console.log(galleryItems);
 
-const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector('.gallery');
 
 const itemEl = galleryItems
   .map(
-    (item) =>
+    item =>
       //   `<div class="gallery__item">
       //         <a class="gallery__link" href=${item.original} onclick="return false;">
       //         <img class="gallery__image" src=${item.preview} data-source=${item.original} alt='${item.description}'></a>
@@ -23,13 +23,13 @@ const itemEl = galleryItems
 </div>
           `
   )
-  .join("");
+  .join('');
 
-gallery.insertAdjacentHTML("afterbegin", itemEl);
+gallery.insertAdjacentHTML('afterbegin', itemEl);
 
 // import SimpleLightbox from "../node_modules/simplelightbox/dist/simple-lightbox.esm";
 
-let lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt",
+let lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
   captionDelay: 250,
 });
